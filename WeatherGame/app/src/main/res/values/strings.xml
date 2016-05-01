@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="highscores">Highscores</string>
+    <string name="options">Options</string>
+    <string name="new_game">New Game</string>
+    <string name="sub_option_1">Sub Option 1</string>
+    <string name="sub_option_2">Sub Option 2</string>
+</resources>
