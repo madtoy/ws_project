@@ -283,6 +283,7 @@ public class NewGameActivity extends AppCompatActivity {
             if(dieCounter < 1)
             {
                 dbHandler.AddUser(optionResult[0], String.valueOf(score), String.valueOf(s));
+                dieCounter = 1;
             }
         }
         else
