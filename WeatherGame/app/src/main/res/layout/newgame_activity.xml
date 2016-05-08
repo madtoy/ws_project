@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newgamelayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8181F7">
+    <!-- height az 358 dp csak azért mert így le tudom kérdezni a méretét a kódban -->
+
+    <!-- END GAME -->
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:text="Game Over"
+        android:id="@+id/gameOverButton"
+        android:textColor="@color/whitefont"
+        android:textSize="11dp"
+        android:background="@drawable/controlbuttonbackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Score: "
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:layout_toStartOf="@+id/score"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="0"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <!-- CHARACTER -->
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/character"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="61dp"
+        android:layout_marginLeft="2dp"/>
+        <!--android:background="@drawable/shit"-->
+
+    <!-- BLOCKERS -->
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/blocker1"
+        android:background="@drawable/block"
+        />
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/blocker2"
+        android:background="@drawable/block"
+        />
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/blocker3"
+        android:background="@drawable/block"
+        />
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/blocker4"
+        android:background="@drawable/block"
+        />
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/blocker5"
+        android:background="@drawable/block"
+        />
+
+
+
+    <!-- CONTROL BUTTONS -->
+        <!-- LEFT -->
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/moveLeftButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/floor"
+        android:background="@drawable/controlbuttonbackground"
+        />
+        <!-- RIGHT -->
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/moveRightButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/floor"
+        android:layout_alignRight="@+id/floor"
+        android:background="@drawable/controlbuttonbackground"
+        />
+
+
+    <!-- FLOOR -->
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/floor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/floor" />
+
+</RelativeLayout>

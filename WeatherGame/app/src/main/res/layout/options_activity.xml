@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8181F7">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:id="@+id/characterselecttextview"
+        android:text="CHARACTER SELECT"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/characterselecttextview"
+        android:layout_marginLeft="100dp"
+        android:textColor="#fff"
+        android:id="@+id/yournametextview"
+        android:hint="Your name here"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save"
+        android:textColor="@color/whitefont"
+        android:background="@drawable/buttonbackground"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <!-- CHARACTERS -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sunnycharacter"
+            />
+        <android.support.v7.widget.AppCompatImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/droid"
+            />
+        <android.support.v7.widget.AppCompatImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/devil"
+            />
+        <android.support.v7.widget.AppCompatImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/skull"
+            />
+        <android.support.v7.widget.AppCompatImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shit"
+            />
+
+    </GridLayout>
+
+
+
+
+
+    <!-- CHARACTERS SELECT -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/characterselection"
+        >
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunny"
+                android:checked="true"
+                android:id="@+id/sunny"
+                />
+
+            <RadioButton
+                android:id="@+id/droid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Droid"
+                android:layout_marginTop="10dp" />
+
+            <RadioButton
+                android:id="@+id/devil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sav"
+                android:layout_marginTop="10dp" />
+
+            <RadioButton
+                android:id="@+id/skull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MergeConflict"
+                android:layout_marginTop="10dp" />
+
+        <RadioButton
+            android:id="@+id/shit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krisztian"
+            android:layout_marginTop="10dp" />
+
+
+
+    </RadioGroup>
+
+
+    <!-- FLOOR -->
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/floor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/floor" />
+
+
+
+</RelativeLayout>
